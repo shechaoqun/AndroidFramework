@@ -1,1 +1,1 @@
-include ':app', ':she-android-framework'
+include ':app', ':easy-android-framework'
