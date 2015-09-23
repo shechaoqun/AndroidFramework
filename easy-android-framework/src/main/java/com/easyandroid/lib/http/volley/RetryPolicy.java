@@ -18,5 +18,4 @@ public interface RetryPolicy {
      */
     int getCurrentRetryCount();
 
-    void retry() throws V
 }
