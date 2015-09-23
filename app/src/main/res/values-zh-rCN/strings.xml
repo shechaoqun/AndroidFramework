@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">亲爱的</string>
+
+    <string name="menu_refresh">刷新</string>
+    <string name="menu_location">位置</string>
+    <string name="menu_settings">设置</string>
+</resources>
