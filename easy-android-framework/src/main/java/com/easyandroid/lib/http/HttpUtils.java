@@ -1,7 +1,7 @@
 package com.easyandroid.lib.http;
 
-import org.apache.http.client.CookieStore;
 
+import java.net.CookieStore;
 import java.util.Map;
 
 /**

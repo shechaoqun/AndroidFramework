@@ -23,7 +23,6 @@ public class MainActivity extends AppCompatActivity {
 
         if(savedInstanceState ==null){
             FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-
         }
     }
 

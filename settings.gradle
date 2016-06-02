@@ -1,1 +1,1 @@
-include ':app', ':easy-android-framework'
+include ':app', ':easy-android-framework', ':skylib'
