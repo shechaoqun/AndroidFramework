@@ -21,5 +21,7 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile project (':easy-android-framework')
+    compile project (':skylib')
+    compile 'com.android.support:design:23.2.0'
+
 }

@@ -7,7 +7,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="不才"
+        android:text="良辰美景"
         android:id="@+id/textView"
         android:layout_gravity="center_horizontal" />
 </LinearLayout>
