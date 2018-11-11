@@ -7,6 +7,8 @@ import android.util.Log;
 
 import com.android.skylib.BuildConfig;
 
+import java.util.logging.Logger;
+
 /**
  * User: shechaoqun
  * Email: shechaoqun@gmail.com

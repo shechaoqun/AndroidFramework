@@ -1,4 +1,4 @@
-package com.android.skylib.tools;
+package com.android.skylib.utils;
 
 import android.os.Build;
 import android.util.Log;

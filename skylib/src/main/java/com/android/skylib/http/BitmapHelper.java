@@ -15,6 +15,7 @@ import java.net.URL;
  */
 public class BitmapHelper {
     private static String TAG = BitmapHelper.class.getSimpleName();
+
     public static Bitmap getBitmapFromURL(String url) {
         try {
             URL urls = new URL(url);

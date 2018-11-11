@@ -7,6 +7,7 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.MenuItemCompat;
 import android.support.v4.view.ViewPager;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
@@ -15,6 +16,8 @@ import com.easyandroid.anata.R;
 import com.easyandroid.anata.fragment.CalendarFragment;
 import com.easyandroid.anata.fragment.MySelfFragment;
 import com.easyandroid.anata.fragment.VideoFragment;
+import com.orhanobut.logger.Logger;
+
 
 /**
  * Created by chaoqun on 2015/9/23.
@@ -27,8 +30,11 @@ public class MainActivity extends LogAppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        getApplication();
 
-        if(savedInstanceState ==null){
+        Logger.e("hello");
+
+        if (savedInstanceState == null) {
             FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
         }
         initViews();
@@ -76,8 +82,8 @@ public class MainActivity extends LogAppCompatActivity {
 
     private void initViews() {
 
-        mTablayout= (TabLayout) findViewById(R.id.tabLayout);
-        mViewPager= (ViewPager) findViewById(R.id.viewPager);
+        mTablayout = (TabLayout) findViewById(R.id.tabLayout);
+        mViewPager = (ViewPager) findViewById(R.id.viewPager);
 
         mViewPager.setAdapter(new FragmentPagerAdapter(getSupportFragmentManager()) {
 

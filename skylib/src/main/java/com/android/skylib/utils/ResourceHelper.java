@@ -1,4 +1,4 @@
-package com.android.skylib.tools;
+package com.android.skylib.utils;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
@@ -13,7 +13,7 @@ public class ResourceHelper {
 
     private static String TAG = ResourceHelper.class.getSimpleName();
     /**
-     * @param
+     * @param Context context,int drawableId
      * @return Drawable
      * 获取Drawable from /drawable  /mipmap
      */
