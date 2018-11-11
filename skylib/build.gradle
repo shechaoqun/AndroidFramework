@@ -5,14 +5,14 @@ apply plugin: 'com.novoda.bintray-release'
 //apply from: "bintrayUpload.gradle"
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion '25.0.2'
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
 
     defaultConfig {
-        minSdkVersion 8
-        targetSdkVersion 23
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
-        versionName "0.0.2"
+        versionName rootProject.ext.publishVersion
     }
     buildTypes {
         release {
@@ -28,10 +28,8 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:23.3.0'
-
-
+    testCompile "junit:junit:$rootProject.junitVersion"
+    compile "com.android.support:appcompat-v7:$rootProject.supportLibraryVersion"
 
 }
 
@@ -39,13 +37,10 @@ publish {
     userOrg = 'shechaoqun'      //bintray注册的用户名
     groupId = 'com.android.skylib'         //compile引用时的第1部分groupId
     artifactId = 'skylib'     //compile引用时的第2部分项目名
-    publishVersion = '0.0.2'    //compile引用时的第3部分版本号
+    publishVersion = rootProject.ext.publishVersion    //compile引用时的第3部分版本号
     desc = 'This is a android extend library'
     website = 'https://github.com/shechaoqun/AndroidFramework'
 }
-
-//./gradlew clean build bintrayUpload -x mavenAndroidJavadocs -PbintrayUser=shechaoqun -PbintrayKey=4ed41bdc2afe2297c99b1e670c5601e663cf1bbd -PdryRun=false
-
 
 /*mavenCentral()
 jcenter()

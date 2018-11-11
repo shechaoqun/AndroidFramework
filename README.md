@@ -14,6 +14,3 @@ android framework
 <blockquote>compile 'com.android.skylib:skylib:0.0.1' </blockquote>
 
 
-
-上传  ./gradlew install
-    ./gradlew bintrayUpload

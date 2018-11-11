@@ -13,7 +13,8 @@ public class ResourceHelper {
 
     private static String TAG = ResourceHelper.class.getSimpleName();
     /**
-     * @param Context context,int drawableId
+     * @param  context 上下文
+     * @param drawableId  资源id
      * @return Drawable
      * 获取Drawable from /drawable  /mipmap
      */

@@ -21,8 +21,8 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile project (':skylib')
     compile 'com.android.support:design:23.3.0'
     compile 'com.orhanobut:logger:1.15'
+    compile 'com.android.skylib:skylib:0.0.2'
 
 }
